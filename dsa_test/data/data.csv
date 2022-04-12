@@ -1,0 +1,12 @@
+Course_from,Course_to,weight
+Fundamentals of Programming,Software Engineering,1
+Fundamentals of Programming,Data Structures and Algos,1
+Data Structures and Algos,Algorithm Design,1
+Javascript,MERN Stack,1
+Javascript,React,1
+Javascript,Nodejs,1
+Nodejs,MERN Stack,1
+Mongodb,MERN Stack,1
+API Design,Backend developer,1
+Mongodb,Backend developer,1
+Expressjs,MERN Stack,1
