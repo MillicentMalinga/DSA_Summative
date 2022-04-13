@@ -11,20 +11,26 @@ data = pd.read_csv('data/data.csv')
 
 st.title('Self-taught techies Guide')
 # Define selection options and sort alphabetically
-careers_list = ['Software Engineering', 'Data Science', 'Web Developer', 'Mobile App Developer']
+careers_list = ['Software Engineering', 'Data Science', 'Web Development', 'App Development']
 careers_list.sort()
 
-selected_careers = st.multiselect('Select Career to visualize', careers_list)
+# selected_career = st.multiselect('Select Career to visualize', careers_list)
+selected_career = st.selectbox(
+     'Which career path guide would you like to see?', careers_list)
+
+sources = data['Course_from']
+targets = data['Course_to']
+career = data['is_prerequisite_of']
+edge_data = zip(sources, targets, career)
 
 # Set info message on initial site load
-if len(selected_careers) == 0:
-    sources = data['Course_from']
-    targets = data['Course_to']
-    weights = data['weight']
+if selected_career is None:
+    
+    # weights = data['weight']
 
     # creating graph
     G = nx.DiGraph()
-    edge_data = zip(sources, targets)
+    
 
     for e in edge_data:
         src = e[0]
@@ -32,61 +38,65 @@ if len(selected_careers) == 0:
 
         # G.add_node(src)
         # G.add_node(dst)
-        G.add_edges_from(edge_data)
+        G.add_edge(src, dst)
 
     # G = nx.DiGraph()
-    st.text('Choose at least 1 career path to view')
+    st.text('Showing all career paths')
 
-# Create network graph when user selects >= 1 item
-# else:
-#     df_select = data.loc[data['Course_from'].isin(selected_careers) | \
-#                                 data['Course_to'].isin(selected_careers)]
-#     df_select = df_select.reset_index(drop=True)
+elif selected_career:
+    G = nx.DiGraph()
 
-#     # Create networkx graph object from pandas dataframe
-#     G = nx.from_pandas_edgelist(df_select, 'Course_from', 'Course_to', 'weight')
+    for edge in edge_data:
+        if selected_career in edge[2]:
+            G.add_edge(edge[0], edge[1])
 
-    # Initiate PyVis network object
-    careers_graph = Network(directed=True,
-                       height='1000px',
-                       width='750px',
-                       bgcolor='#222222',
-                       font_color='white'
-                      )
 
-    # Take Networkx graph and translate it to a PyVis graph format
-    careers_graph.from_nx(G)
 
-    # Generate network with specific layout settings
-    careers_graph.repulsion(
-                        node_distance=420,
-                        central_gravity=0.33,
-                        spring_length=110,
-                        spring_strength=0.10,
-                        damping=0.95
-                       )
+careers_graph = Network(directed=True,
+                    height='1000px',
+                    width='750px',
+                    bgcolor='#222222',
+                    font_color='white'
+                    )
 
-    # Save and read graph as HTML file (on Streamlit Sharing)
-    try:
-        path = '/tmp'
-        careers_graph.save_graph(f'{path}/course_graph.html')
-        HtmlFile = open(f'{path}/course_graph.html', 'r', encoding='utf-8')
+# Take Networkx graph and translate it to a PyVis graph format
+careers_graph.from_nx(G)
 
-    # Save and read graph as HTML file (locally)
-    except:
-        path = 'html_files'
-        careers_graph.save_graph(f'{path}/course_graph.html')
-        HtmlFile = open(f'{path}/course_graph.html', 'r', encoding='utf-8')
+# Generate network with specific layout settings
+careers_graph.repulsion(
+                    node_distance=420,
+                    central_gravity=0.33,
+                    spring_length=110,
+                    spring_strength=0.10,
+                    damping=0.95
+                    )
 
-    # Load HTML file in HTML component for display on Streamlit page
-    components.html(HtmlFile.read(), height=435)
+# Save and read graph as HTML file (on Streamlit Sharing)
+try:
+    path = '/tmp'
+    careers_graph.save_graph(f'{path}/course_graph.html')
+    HtmlFile = open(f'{path}/course_graph.html', 'r', encoding='utf-8')
+
+# Save and read graph as HTML file (locally)
+except:
+    path = 'html_files'
+    careers_graph.save_graph(f'{path}/course_graph.html')
+    HtmlFile = open(f'{path}/course_graph.html', 'r', encoding='utf-8')
+
+# Load HTML file in HTML component for display on Streamlit page
+components.html(HtmlFile.read(), height=435)
 
 # Footer
 st.markdown(
     """
     <br>
-    <h6><a href="https://github.com/kennethleungty/Pyvis-Network-Graph-Streamlit" target="_blank">GitHub Repo</a></h6>
-    <h6><a href="https://kennethleungty.medium.com" target="_blank">Medium article</a></h6>
-    <h6>Disclaimer: This app is NOT intended to provide any form of medical advice or recommendations. Please consult your doctor or pharmacist for professional advice relating to any drug therapy.</h6>
+    <h6><a href="https://github.com/MillicentMalinga/DSA_Summative" target="_blank">GitHub Repo</a></h6>
+    <h6><a href="htt/h5>ps://.medium.com" target="_blank">Medium article</a></h6>
+    <h5>Created by:</h5>
+    <ul>
+    <li>Millicent Malinga</li>
+    <li>Ntutu Sekonyela</li>
+    <li>Sarah Sunday Moses</li>
+    <h6>Disclaimer: The data contained here is from research done by students. The path could change according to what you want.</h6>
     """, unsafe_allow_html=True
     )
