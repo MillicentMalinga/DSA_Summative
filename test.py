@@ -14,7 +14,7 @@ net.add_edges([(1,2), (1, 4), (1, 3), (2, 14), (2, 15),
                (2,13), (3, 16),(3,5),(3,8),(3,6),(3,7),
                (4,11), (4, 12),(4, 10),(4, 9),
                ])
-'''net.add_node(1, label='Software Engineering')
+'''net.add_node(1, label='https://alx-intranet.hbtn.io/curriculums/17/overview')
 net.add_node(2, label="Devops")
 net.add_node(3, label="low level programming")
 net.add_node(4, label="High level Programming")
@@ -33,6 +33,6 @@ net.add_node(16, label="C programming and algorithms in C")
 #net.add_node(17, label="Devops")'''
 
 net.repulsion(node_distance=200, spring_length=250)
-net.show_buttons(filter_=['physics'])
+net.toggle_hide_nodes_on_drag(True)
 net.show('output.html') 
 
