@@ -1,0 +1,16 @@
+,CourseOne,CourseTwo,Relation
+0,Build your First App,Layouts,android_kotlin_developer
+1,Layouts,App Navigation,android_kotlin_developer
+2,App Navigation,Activity and Fragment Lifecycle,android_kotlin_developer
+3,Activity and Fragment Lifecycle,Recycler View,android_kotlin_developer
+4,Recycler View,Connect to the Internet,android_kotlin_developer
+5,Connect to the Internet,Behind the Scenes,android_kotlin_developer
+6,Behind the Scenes,Designing for Everyone,android_kotlin_developer
+7,Designing for Everyone,  Create custom views for your app,android_kotlin_developer
+8,  Create custom views for your app,  Build an app that allows users to paint directly on the screen,android_kotlin_developer
+9,  Build an app that allows users to paint directly on the screen,Android Property Animations,android_kotlin_developer
+10,Android Property Animations,Using Motion Layout to Animate Android Apps,android_kotlin_developer
+11,Using Motion Layout to Animate Android Apps,Wandering in Google Maps with Kotlin,android_kotlin_developer
+12,Wandering in Google Maps with Kotlin,  Enable location services and tracking,android_kotlin_developer
+13,  Enable location services and tracking,Testing  Basics,android_kotlin_developer
+14,Testing  Basics,Implementing Login on Android with FirebaseUI,android_kotlin_developer

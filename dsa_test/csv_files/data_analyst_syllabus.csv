@@ -1,0 +1,28 @@
+,CourseOne,CourseTwo,Relation
+0,Anaconda,Jupyter Notebooks,data_analyst_syllabus
+1,Jupyter Notebooks,Data Analysis Process,data_analyst_syllabus
+2,Data Analysis Process,Pandas and AND NumPy Case Study 1,data_analyst_syllabus
+3,Pandas and AND NumPy Case Study 1,Programming Workflow for Data Analysis,data_analyst_syllabus
+4,Programming Workflow for Data Analysis,Simpson s Paradox,data_analyst_syllabus
+5,Simpson s Paradox,Probability ,data_analyst_syllabus
+6,Probability ,Binomial Distribution,data_analyst_syllabus
+7,Binomial Distribution,ConditionalProbability,data_analyst_syllabus
+8,ConditionalProbability,Standardizing,data_analyst_syllabus
+9,Standardizing,Sampling Distributions and Central Limit Theorem,data_analyst_syllabus
+10,Sampling Distributions and Central Limit Theorem,Confidence Intervals,data_analyst_syllabus
+11,Confidence Intervals,Hypothesis Testing,data_analyst_syllabus
+12,Hypothesis Testing,T Tests and A B Tests,data_analyst_syllabus
+13,T Tests and A B Tests,Regression,data_analyst_syllabus
+14,Regression,Multiple LinearRegression,data_analyst_syllabus
+15,Multiple LinearRegression,Logistic Regression,data_analyst_syllabus
+16,Logistic Regression,Intro to Data Wrangling,data_analyst_syllabus
+17,Intro to Data Wrangling,Gathering Data,data_analyst_syllabus
+18,Gathering Data,Assessing Data,data_analyst_syllabus
+19,Assessing Data,Cleaning Data,data_analyst_syllabus
+20,Cleaning Data,Data Visualization in Data Analysis ,data_analyst_syllabus
+21,Data Visualization in Data Analysis ,Design ofVisualizations,data_analyst_syllabus
+22,Design ofVisualizations,Univariate Exploration of Data,data_analyst_syllabus
+23,Univariate Exploration of Data,Bivariate Exploration of Data,data_analyst_syllabus
+24,Bivariate Exploration of Data,Multivariate Exploration of Data,data_analyst_syllabus
+25,Multivariate Exploration of Data,Explanatory Visulizations ,data_analyst_syllabus
+26,Explanatory Visulizations ,VisulizationCase Study,data_analyst_syllabus

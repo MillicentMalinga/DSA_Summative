@@ -1,0 +1,14 @@
+,CourseOne,CourseTwo,Relation
+0,Introduction to the C   Language,A  Search,c+++
+1,A  Search,Writing MultifilePrograms,c+++
+2,Writing MultifilePrograms,Introduction to OOP in C  ,c+++
+3,Introduction to OOP in C  ,Access Modifiers and Inheritance,c+++
+4,Access Modifiers and Inheritance,Polymorphism and Templates,c+++
+5,Polymorphism and Templates,Overview ofMemory Types,c+++
+6,Overview ofMemory Types,Variables andMemory,c+++
+7,Variables andMemory,Dynamic MemoryAllocation  TheHeap ,c+++
+8,Dynamic MemoryAllocation  TheHeap ,Resource CopyingPolicies,c+++
+9,Resource CopyingPolicies,Smart Pointers,c+++
+10,Smart Pointers,Managing Threads,c+++
+11,Managing Threads,Passing Data Between Threads,c+++
+12,Passing Data Between Threads,Mutexes  Locks  and Condition Variables,c+++

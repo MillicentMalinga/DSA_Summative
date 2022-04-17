@@ -1,0 +1,16 @@
+,CourseOne,CourseTwo,Relation
+0,Blockchain Basics,Managing Blockchain Transactions,blockchain_developer
+1,Managing Blockchain Transactions,Bitcoin core Testnet,blockchain_developer
+2,Bitcoin core Testnet,Blockchain Data,blockchain_developer
+3,Blockchain Data,Digital Assets on Blockchain,blockchain_developer
+4,Digital Assets on Blockchain,Ethereum Fundamentals and Development Tools,blockchain_developer
+5,Ethereum Fundamentals and Development Tools,Smart Contracts with Solidity,blockchain_developer
+6,Smart Contracts with Solidity,Ethereum APP,blockchain_developer
+7,Ethereum APP,Planning Blockchain Solutions,blockchain_developer
+8,Planning Blockchain Solutions,Privacy,blockchain_developer
+9,Privacy,  Identify architecture security and maintenance risks,blockchain_developer
+10,  Identify architecture security and maintenance risks,Distributed file system,blockchain_developer
+11,Distributed file system,Multiparty control and payments with smart contracts,blockchain_developer
+12,Multiparty control and payments with smart contracts,ORACLES,blockchain_developer
+13,ORACLES,Handing smart contract payments,blockchain_developer
+14,Handing smart contract payments,ZK SNARKS,blockchain_developer

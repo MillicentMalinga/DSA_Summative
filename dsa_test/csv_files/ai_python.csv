@@ -1,0 +1,23 @@
+,CourseOne,CourseTwo,Relation
+0,Why PythonProgramming,Data Types andOperators,ai_python
+1,Data Types andOperators,Control Flow,ai_python
+2,Control Flow,Functions,ai_python
+3,Functions,Classes,ai_python
+4,Classes,Anaconda,ai_python
+5,Anaconda,Jupyter Notebooks,ai_python
+6,Jupyter Notebooks,Numpy Basics,ai_python
+7,Numpy Basics,Pandas Basics,ai_python
+8,Pandas Basics,Introduction,ai_python
+9,Introduction,Vectors,ai_python
+10,Vectors,Linear Combination ,ai_python
+11,Linear Combination ,LinearTransformationand Matrices,ai_python
+12,LinearTransformationand Matrices,Labs,ai_python
+13,Labs,Introduction,ai_python
+14,Introduction,DerivativesThroughGeometry,ai_python
+15,DerivativesThroughGeometry,Chain Rule andDot Product,ai_python
+16,Chain Rule andDot Product,More onDerivatives,ai_python
+17,More onDerivatives,Integration,ai_python
+18,Integration,Calculus inNeural Networks,ai_python
+19,Calculus inNeural Networks,Introduction toNeural Networks,ai_python
+20,Introduction toNeural Networks,Training NeuralNetworks,ai_python
+21,Training NeuralNetworks,  Learn how to use PyTorch for building deep learning models.,ai_python

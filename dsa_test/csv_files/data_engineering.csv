@@ -1,0 +1,13 @@
+,CourseOne,CourseTwo,Relation
+0,Introduction to DataModeling,Relational Data Models,data_engineering
+1,Relational Data Models,NoSQL Data Models,data_engineering
+2,NoSQL Data Models,Introduction to theData Warehouses,data_engineering
+3,Introduction to theData Warehouses,Introduction to theCloud with AWS,data_engineering
+4,Introduction to theCloud with AWS,Implementing DataWarehouses on AWS,data_engineering
+5,Implementing DataWarehouses on AWS,The Power of Spark,data_engineering
+6,The Power of Spark,Data Wrangling with Spark,data_engineering
+7,Data Wrangling with Spark,Debugging andOptimization,data_engineering
+8,Debugging andOptimization,Introduction to Data Lakes,data_engineering
+9,Introduction to Data Lakes,Data Pipelines,data_engineering
+10,Data Pipelines,Data Quality,data_engineering
+11,Data Quality,Production DataPipelines,data_engineering
