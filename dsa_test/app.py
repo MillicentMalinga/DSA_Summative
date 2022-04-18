@@ -91,15 +91,4 @@ st.markdown(
     """, unsafe_allow_html=True
     )
 
-'''def paths(G, start, end, path=[]):
-        path = path + [start]
-        if start == end:
-            return path
-        if not G.has_key(start):
-            return None
-        for node in G[start]:
-            if node not in path:
-                newpath = paths(G, node, end, path)
-                if newpath: return newpath
-        return None
-path(G, data, data)''' #learnt from https://www.python.org/doc/essays/graphs/
+
